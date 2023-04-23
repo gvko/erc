@@ -4,11 +4,13 @@
   "description": "ERC implementations",
   "main": "index.js",
   "scripts": {
+    "compile": "npx hardhat compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@openzeppelin/contracts": "^4.8.3",
     "chai": "^4.3.7",
     "dotenv": "^16.0.3",
