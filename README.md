@@ -1,9 +1,11 @@
-# Sample Hardhat Project
+# ERC implementations
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+* [ ] ERC20
+* [ ] ERC721
 
-Try running some of the following tasks:
 
+
+#### Hardhat helper commands
 ```shell
 npx hardhat help
 npx hardhat test
