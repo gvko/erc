@@ -2,9 +2,12 @@ import { ethers } from 'hardhat';
 
 async function main() {
   const contractName = 'Chinazo'
-  const contractFactory = await ethers.getContractFactory('ERC20_Chinazo')
+  const contractSymbol = 'CHNZ'
+  // const contractFactory = await ethers.getContractFactory('ERC20_Chinazo')
+  const contractFactory = await ethers.getContractFactory('ERC721_Chinazo')
 
-  const contract = await contractFactory.deploy(contractName, 'CHNZ', 18, 1)
+  // const contract = await contractFactory.deploy(contractName, contractSymbol, 18, 1)
+  const contract = await contractFactory.deploy(contractName, contractSymbol, '0x00')
   await contract.deployed()
   console.log(`Contract '${contractName}' deployed to address:`, contract.address)
 
